@@ -1,0 +1,11 @@
+.UserInput {
+	width: 80%;
+	margin: 16px;
+	padding: 16px;
+	text-align: center;
+	border-radius: 2rem;
+	border-color: aquamarine;
+	font-size: large;
+	font-weight: 900;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
