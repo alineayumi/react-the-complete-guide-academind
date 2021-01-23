@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect }from 'react';
 import classes from './Cockpit.css';
 
 const cockpit = (props) => {
+	useEffect(() => {
+		console.log('[Cockpit.js] useEffect');
+		// http request ...
+	});
 
 	let btnClass = '';
 	let assignedClasses = [];
@@ -15,8 +19,6 @@ const cockpit = (props) => {
 	if (props.persons.length <= 1) {
 		assignedClasses.push(classes.bold);
 	}
-
-
 
 	return (
 		<div className={classes.Cockpit}>
