@@ -43,6 +43,7 @@ const cockpit = (props) => {
 				ref={toggleButtonRef}>
 					Toggle Persons
 			</button>
+			<button onClick={props.login}>Log In</button>
 		</div>
 	);
 };
