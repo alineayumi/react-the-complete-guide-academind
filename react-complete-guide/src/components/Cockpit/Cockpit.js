@@ -5,17 +5,17 @@ const cockpit = (props) => {
 	useEffect(() => {
 		console.log('[Cockpit.js] useEffect');
 		// http request ...
-		setTimeout(() => {
+		const timer = setTimeout(() => {
 			alert('save data to cloud');
 		}, 1000);
 		return () => {
+			clearTimeout(timer);
 			console.log('[Cockpit.js] cleanup work in useEffect');
 		}
 	}, []);
 
 	useEffect(() => {
 		console.log('[Cockpit.js] 2nd useEffect');
-
 	});
 
 	let btnClass = '';
